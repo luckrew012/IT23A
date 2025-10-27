@@ -1,0 +1,134 @@
+:root {
+  --purple: #6f2bdc;
+  --pink: #d773b8;
+  --accent: linear-gradient(90deg, var(--pink) 0%, #8b5cf6 100%);
+  --muted: #767676;
+  --container: 1200px;
+}
+
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: 'Roboto', system-ui, Arial, sans-serif;
+  color: #222;
+  background: #fff;
+}
+header {
+  max-width: var(--container);
+  margin: 20px auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2px;
+}
+
+.logo img {
+  height: 150px;
+  width: auto;
+  object-fit: contain;
+  transition: all 0.3s ease; /* smooth resizing */
+}
+
+
+.nav-links a {
+  color: #444;
+  text-decoration: none;
+  padding: 10px 14px;
+  border-radius: 6px;
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  background: linear-gradient(90deg, rgba(139,92,246,0.06), rgba(215,114,197,0.04));
+}
+
+.signup {
+  background: var(--accent);
+  color: white;
+  padding: 10px 16px;
+  border-radius: 8px;
+  text-decoration: none;
+  box-shadow: 0 4px 14px rgba(139,92,246,0.25);
+}
+/* hanang dako na text */
+.hero {
+  max-width: var(--container);
+  margin: 30px auto 80px;
+  padding: 30px 20px;
+  display: flex;
+  gap: 40px;
+  align-items: top;
+  justify-content: space-between;
+}
+
+
+.hero-left { flex: 0 0 55%; min-width: 300px; }
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 48px;
+  margin: 6px 0 18px;
+  line-height: 1.02;
+  font-weight: 700;
+  color: #222;
+}
+
+.highlight {
+  background: linear-gradient(90deg, #d57bb7, #8b5cf6);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.bigword {
+  font-weight: 800;
+  font-size: 56px;
+  background: linear-gradient(90deg, #8b5cf6, #c47bd3);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+p.lead {
+  color: #6b6b6b;
+  max-width: 520px;
+  margin: 18px 0 26px;
+}
+
+.cta {
+  display: inline-block;
+  background: #3b82f6;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+.illustration {
+  max-width: 450px;
+  width: 100%;
+}
+
+.dotted-box {
+  border: 2px dashed rgba(140,85,204,0.15);
+  padding: 10px;
+  border-radius: 6px;
+}
+
+/* Responsive */
+@media (max-width: 980px) {
+  .hero { flex-direction: column-reverse; text-align: center; }
+  nav { display: none; }
+}
+
+@media (max-width: 480px) {
+  h1 { font-size: 28px; }
+  .bigword { font-size: 34px; }
+  .cta { padding: 10px 14px; }
+}
+
+.highlight {
+  background: linear-gradient(90deg, #a06cd5, #6a4c93);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
+}
+
