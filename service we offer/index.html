@@ -1,65 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Services We Offer</title>
-
-<!-- Swiper CSS -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-
-<!-- Custom CSS -->
-<link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-<section id="services">
-  <h2>Services we offer</h2>
+  <section class="form-container">
+    <h2>Login</h2>
+    <input type="text" placeholder="Username" id="loginUsername">
+    <input type="password" placeholder="Password" id="loginPassword">
+    <button onclick="login()">Login</button>
+    <p>Don't have an account? <a href="create.html">Create one</a></p>
+  </section>
 
-  <div class="swiper">
-    <div class="swiper-wrapper">
-
-      <div class="swiper-slide">
-        <img src="https://cdn-icons-png.flaticon.com/512/679/679922.png" alt="Customer">
-        <h3>24/7 <span>Customer Support</span></h3>
-        <p>Always available to assist via call, chat, or social media.</p>
-      </div>
-
-      <div class="swiper-slide">
-        <img src="https://cdn-icons-png.flaticon.com/512/3405/3405244.png" alt="Payment">
-        <h3>Flexible <span>Payment Options</span></h3>
-        <p>COD, e-wallets, and credit/debit cards for easy checkout.</p>
-      </div>
-
-      <div class="swiper-slide">
-        <img src="https://cdn-icons-png.flaticon.com/512/2293/2293517.png" alt="Delivery">
-        <h3>Fast &amp; <span>Secure Delivery</span></h3>
-        <p>Nationwide shipping with real-time order tracking.</p>
-      </div>
-
-      <div class="swiper-slide">
-        <img src="https://cdn-icons-png.flaticon.com/512/2910/2910768.png" alt="Rewards">
-        <h3>Exclusive <span>Deals &amp; Rewards</span></h3>
-        <p>Discounts, promo codes, and loyalty perks for returning customers.</p>
-      </div>
-
-      <div class="swiper-slide">
-        <img src="https://cdn-icons-png.flaticon.com/512/1046/1046784.png" alt="Collection">
-        <h3>Premium <span>Product Collection</span></h3>
-        <p>Handpicked items to match the latest trends and needs.</p>
-      </div>
-
-    </div>
-
-    <!-- Pagination Dots -->
-    <div class="swiper-pagination"></div>
-  </div>
-</section>
-
-<!-- Swiper JS -->
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-<!-- Custom JS -->
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>

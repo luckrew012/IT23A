@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f6f5fb;
+  padding: 10px 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo img {
+  width: 30px;
+}
+
+.search-bar {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  background: white;
+  border-radius: 25px;
+  padding: 5px 10px;
+  margin: 0 40px;
+  border: 1px solid #ccc;
+}
+
+.search-bar input {
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 5px 10px;
+}
+
+.search-bar i {
+  color: gray;
+}
+
+.nav-icons {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.login-btn, .signup-btn {
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.login-btn {
+  background: linear-gradient(to right, #5d3fd3, #9c27b0);
+  color: white;
+}
+
+.signup-btn {
+  background: linear-gradient(to right, #7b4397, #dc2430);
+  color: white;
+}
+
+/* Top Menu */
+.top-menu {
+  display: flex;
+  justify-content: center;
+  background: #cce0ff;
+  padding: 8px 0;
+  gap: 25px;
+  font-size: 14px;
+  border-bottom: 1px solid #ddd;
+}
+
+.top-menu a {
+  color: black;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/* Layout */
+.container {
+  display: flex;
+  flex: 1;
+  height: calc(100vh - 100px);
+}
+
+/* Sidebar */
+aside {
+  background: #a9c9ff;
+  width: 200px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+aside .user-section {
+  text-align: center;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+aside ul {
+  list-style: none;
+  width: 100%;
+}
+
+aside li {
+  padding: 12px 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-radius: 8px;
+  transition: background 0.3s;
+}
+
+aside li:hover {
+  background: #8ab6f9;
+}
+
+/* Main Content */
+main {
+  flex: 1;
+  overflow-y: auto;
+  background: white;
+  padding: 20px;
+}
+
+.filler {
+  height: 2000px; /* For scrolling test */
+}
+
