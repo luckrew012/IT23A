@@ -1,7 +1,7 @@
 body {
   font-family: Arial, sans-serif;
-  background: linear-gradient(to right, #7b4397, #dc2430);
-  color: white;
+  background: linear-gradient(to right, #eeecf0, #dad3d4);
+  color: rgb(14, 12, 12);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -44,6 +44,6 @@ button:hover {
 }
 
 a {
-  color: #fff;
+  color: #131212;
   text-decoration: underline;
 }
