@@ -4,8 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>NBSC Campus Merch Login</title>
-<link rel="stylesheet" href="loginpage.css" />
-
+<link rel="stylesheet" href="loginpage.css">
+<script src="loginpage.js" defer></script>
 </head>
 
 <body>
@@ -18,17 +18,16 @@
 <div class="container">
     <img src="nbsclogo.png" alt="School Logo">
     
-    <form>
-        <input type="text" placeholder="Student ID" required>
-        <input type="password" placeholder="Password" required>
+    <div class="form-box">
+        <input id="studentID" type="text" placeholder="Student ID" required>
+        <input id="password" type="password" placeholder="Password" required>
 
-        <button class="btn" type="button" onclick="window.location.href='merch.html'">LOGIN</button>
-
+        <button class="btn" id="loginBtn">LOGIN</button>
 
         <div class="divider">OR</div>
 
         <button class="btn">SIGN IN</button>
-    </form>
+    </div>
 </div>
 
 </body>
