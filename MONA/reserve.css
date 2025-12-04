@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
+    margin: 0;
+}
+
+.navbar {
+    background: #020658;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    justify-content: space-between;
+}
+
+.navbar input {
+    padding: 7px 10px;
+    width: 240px;
+    border-radius: 20px;
+    border: none;
+}
+
+.logo {
+    width: 50px;
+    margin-right: 10px;
+}
+
+.header-row {
+    display: grid;
+    grid-template-columns: 40% 20% 20% 20%;
+    padding: 15px;
+    background: #d9d9d9;
+    font-weight: bold;
+}
+
+.reserved-list {
+    margin-top: 10px;
+}
+
+.item-row {
+    display: grid;
+    grid-template-columns: 40% 20% 20% 20%;
+    padding: 15px;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    background: white;
+}
+
+.item-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.item-info img {
+    width: 90px;
+}
+
+.qty-controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.qty-controls button {
+    width: 25px;
+    height: 25px;
+    border: none;
+    background: #020658;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.summary {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#checkoutBtn {
+    padding: 10px 25px;
+    background: #020658;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
