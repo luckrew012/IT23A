@@ -9,7 +9,7 @@ body {
 /* NAVBAR */
 .navbar {
     width: 100%;
-    background: #001a7b;
+    background: #001a7b;   /* NBSC Blue */
     color: white;
     padding: 12px 25px;
     display: flex;
@@ -30,6 +30,12 @@ body {
     align-items: center;
 }
 
+.right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
 .right input {
     padding: 10px;
     width: 250px;
@@ -38,9 +44,25 @@ body {
     outline: none;
 }
 
+/* LOGOUT BUTTON */
+.logout-btn {
+    background: #ffffff;
+    color: #001a7b;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.logout-btn:hover {
+    background: #dce3ff;
+}
+
 /* PRODUCT GRID */
 .container {
-    margin-top: 100px;
+    margin-top: 120px; /* to avoid navbar overlap */
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
     gap: 20px;
@@ -81,6 +103,7 @@ button {
     margin-top: 10px;
     cursor: pointer;
     border-radius: 3px;
+    transition: 0.2s;
 }
 
 button:hover {
