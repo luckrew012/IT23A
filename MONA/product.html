@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Product Details</title>
+<link rel="stylesheet" href="product.css">
+</head>
+
+<body>
+
+<nav class="navbar">
+    <button class="back-btn" onclick="history.back()">←</button>
+    <h2>NBSC CAMPUS MERCH</h2>
+    <div class="cart-icon">🛒</div>
+</nav>
+
+<div class="details-container">
+
+    <div class="left-box">
+        <img id="product-img" src="" alt="">
+        <div class="info-box">
+            <h4>AVAILABLE SIZE:</h4>
+            <p>XXSMALL &nbsp; SMALL &nbsp; MEDIUM &nbsp; LARGE &nbsp; XL</p>
+            <h4>STOCK:</h4>
+            <p>45</p>
+            <h4>RATING:</h4>
+            <p>⭐⭐⭐⭐⭐ 5.0</p>
+        </div>
+    </div>
+
+    <div class="right-box">
+        <h3>ORDER DETAILS</h3>
+        <h2 id="product-name"></h2>
+
+        <h4 id="product-size">SIZE: M</h4>
+        <p>Total item: 1pc</p>
+
+        <hr>
+
+        <h3>Amount: ₱<span id="product-price"></span></h3>
+        <p>Total Amount: ₱<span id="total-price"></span></p>
+
+        <div class="btn-group">
+            <button class="buy-btn-big">BUY</button>
+            <button class="reserve-btn">RESERVE</button>
+        </div>
+    </div>
+
+</div>
+
+<script src="product.js"></script>
+</body>
+</html>

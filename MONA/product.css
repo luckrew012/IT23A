@@ -1,0 +1,74 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f2f2f2;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    background: #0A0E5C;
+    color: white;
+    padding: 15px;
+    justify-content: space-between;
+}
+
+.back-btn {
+    background: none;
+    border: none;
+    font-size: 22px;
+    color: white;
+    cursor: pointer;
+}
+
+.details-container {
+    margin: 30px auto;
+    width: 90%;
+    display: flex;
+    gap: 40px;
+}
+
+.left-box img {
+    width: 350px;
+    height: auto;
+    border: 3px solid #ccc;
+}
+
+.info-box {
+    margin-top: 15px;
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.right-box {
+    background: white;
+    padding: 30px;
+    flex: 1;
+    border-radius: 10px;
+}
+
+.btn-group {
+    display: flex;
+    gap: 20px;
+    margin-top: 25px;
+}
+
+.buy-btn-big, .reserve-btn {
+    padding: 15px 40px;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.buy-btn-big {
+    background: #0A0E5C;
+    color: white;
+}
+
+.reserve-btn {
+    background: white;
+    border: 2px solid #0A0E5C;
+    color: #0A0E5C;
+}
