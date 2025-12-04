@@ -77,7 +77,27 @@ document.getElementById("search").addEventListener("input", e => {
     });
 });
 
-// Checkout button
+// ===============================
+// CHECKOUT SYSTEM
+// ===============================
 document.getElementById("checkoutBtn").addEventListener("click", () => {
-    alert("Checkout system not yet implemented.");
+    const checkboxes = document.querySelectorAll(".item-check");
+    let orderItems = [];
+
+    checkboxes.forEach((box, i) => {
+        if (box.checked) {
+            orderItems.push(reservedItems[i]);
+        }
+    });
+
+    if (orderItems.length === 0) {
+        alert("Please select at least one item to checkout.");
+        return;
+    }
+
+    // Save selected items for checkout page
+    localStorage.setItem("checkoutItems", JSON.stringify(orderItems));
+
+    // Redirect to checkout.html
+    window.location.href = "checkout.html";
 });
