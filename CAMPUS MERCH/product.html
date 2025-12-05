@@ -15,40 +15,84 @@
     <div class="cart-icon">🛒</div>
 </nav>
 
+<div class="product-label">
+    PRODUCT 1
+</div>
+
 <div class="details-container">
 
+    <!-- LEFT SIDE -->
     <div class="left-box">
-        <img id="product-img" src="" alt="">
+        <img id="product-img" src="" alt="Product Image" class="product-image">
+
         <div class="info-box">
             <h4>AVAILABLE SIZE:</h4>
-            <p>XXSMALL &nbsp; SMALL &nbsp; MEDIUM &nbsp; LARGE &nbsp; XL</p>
+            <p>XSMALL &nbsp; SMALL &nbsp; MEDIUM &nbsp; LARGE &nbsp; XL</p>
+
             <h4>STOCK:</h4>
             <p>45</p>
+
             <h4>RATING:</h4>
             <p>⭐⭐⭐⭐⭐ 5.0</p>
         </div>
     </div>
 
+    <!-- RIGHT SIDE -->
     <div class="right-box">
         <h3>ORDER DETAILS</h3>
-        <h2 id="product-name"></h2>
+
+        <h2 id="product-name">NBSC UNIFORM MEN</h2>
+
+        <!-- SIZE SELECT -->
+        <label for="size-select">SIZE:</label>
+        <select id="size-select">
+            <option value="XS">XS</option>
+            <option value="S">S</option>
+            <option value="M" selected>M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+        </select>
 
         <h4 id="product-size">SIZE: M</h4>
-        <p>Total item: 1pc</p>
+
+        <!-- ✅ ADDED QUANTITY INPUT -->
+        <label for="qty">QUANTITY:</label>
+        <input type="number" id="qty" value="1" min="1" style="width: 70px; padding: 5px;">
+        <p id="total-item">Total item: 1pc</p>
 
         <hr>
 
-        <h3>Amount: ₱<span id="product-price"></span></h3>
-        <p>Total Amount: ₱<span id="total-price"></span></p>
+        <h3 class="amount-label">Amount: ₱<span id="product-price">650</span></h3>
+        <p class="total-label">Total Amount: ₱<span id="total-price">650</span></p>
 
         <div class="btn-group">
-            <button class="buy-btn-big">BUY</button>
+            <button class="buy-btn">BUY</button>
             <button class="reserve-btn">RESERVE</button>
         </div>
     </div>
 
 </div>
 
+<script>
+    // PRICE PER ITEM (you can change this)
+    let price = 650;
+
+    const qtyInput = document.getElementById("qty");
+    const totalItem = document.getElementById("total-item");
+    const totalAmount = document.getElementById("total-price");
+
+    qtyInput.addEventListener("input", () => {
+        let qty = parseInt(qtyInput.value);
+
+        if (qty < 1) qty = 1; // Prevent 0 or negative
+        qtyInput.value = qty;
+
+        totalItem.textContent = `Total item: ${qty}pc`;
+        totalAmount.textContent = price * qty;
+    });
+</script>
+
 <script src="product.js"></script>
+
 </body>
 </html>

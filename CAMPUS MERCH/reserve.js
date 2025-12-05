@@ -12,7 +12,10 @@ function loadItems() {
                 <div class="item-info">
                     <input type="checkbox" class="item-check" data-index="${index}">
                     <img src="${item.img}">
-                    <span>${item.name}</span>
+                    <div class="item-text">
+                        <span>${item.name}</span>
+                        <p class="size-text">Size: ${item.size}</p>
+                    </div>
                 </div>
 
                 <div>₱${Number(item.price).toFixed(2)}</div>
@@ -28,6 +31,7 @@ function loadItems() {
         `;
     });
 }
+
 loadItems();
 
 // Change quantity

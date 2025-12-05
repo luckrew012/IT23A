@@ -20,6 +20,18 @@ body {
     border: none;
 }
 
+.item-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.size-text {
+    font-size: 13px;
+    color: gray;
+    margin-top: 2px;
+}
+
+
 .logo {
     width: 50px;
     margin-right: 10px;
