@@ -42,6 +42,14 @@ const logoutBtn = document.getElementById("logoutBtn");
 
 logoutBtn.addEventListener("click", () => {
     alert("You have been logged out.");
-    // Optional redirect:
-    // window.location.href = "login.html";
+    window.location.href = "loginpage.html";
 });
+function toggleMobileView() {
+    if (!document.body.classList.contains("mobile-sim")) {
+        document.body.classList.add("mobile-sim");
+        alert("Mobile view enabled. Resize to see layout changes!");
+    } else {
+        document.body.classList.remove("mobile-sim");
+        alert("Mobile view disabled.");
+    }
+}
