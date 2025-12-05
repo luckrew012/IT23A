@@ -42,6 +42,5 @@ const logoutBtn = document.getElementById("logoutBtn");
 
 logoutBtn.addEventListener("click", () => {
     alert("You have been logged out.");
-    // Optional redirect:
-    // window.location.href = "login.html";
+    window.location.href = "loginpage.html";
 });

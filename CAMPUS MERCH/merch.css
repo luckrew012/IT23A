@@ -55,6 +55,20 @@ body {
     font-weight: bold;
     transition: 0.3s;
 }
+.contact-btn {
+    background: #ffffff;
+    color: #001a7b;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.contact-btn:hover {
+    background: #dce3ff;
+}
 
 .logout-btn:hover {
     background: #dce3ff;
