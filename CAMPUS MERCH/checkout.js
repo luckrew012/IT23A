@@ -13,10 +13,10 @@ function loadItems() {
 
         orderList.innerHTML += `
             <div class="order-item">
-                <div><img src="${item.img}" width="60"> ${item.name}</div>
+                <div>${item.name}</div>
                 <div>₱${item.price}</div>
                 <div>${item.qty}</div>
-                <div>₱${(item.qty * item.price).toFixed(2)}</div>
+                <div>₱${(item.price * item.qty).toFixed(2)}</div>
             </div>
         `;
     });
@@ -37,7 +37,7 @@ document.getElementById("editBtn").addEventListener("click", () => {
     if (newEmail) document.getElementById("userEmail").innerText = newEmail;
 });
 
-// Place Order → Pop-up Receipt
+// Place order
 document.getElementById("placeOrderBtn").addEventListener("click", () => {
     let receipt = "NBSC CAMPUS MERCH\n\n";
     
@@ -46,7 +46,12 @@ document.getElementById("placeOrderBtn").addEventListener("click", () => {
     });
 
     receipt += `GRAND TOTAL: ₱${grandTotal.innerText}\n\n`;
-    receipt += "Show this receipt at the NBSC CAMPUS MERCH .";
+    receipt += "Show this receipt at the NBSC CAMPUS MERCH.";
 
     alert(receipt);
 });
+
+// BACK ARROW FUNCTION
+document.getElementById("backBtn").onclick = function () {
+    window.location.href = "reserve.html";
+};
