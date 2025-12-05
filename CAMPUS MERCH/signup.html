@@ -15,9 +15,10 @@
 </div>
 
 <div class="container">
-    <img src="nbsclogo.png" alt="School Logo">
+    <img src="asset/nbsclogo.png" alt="School Logo">
     
     <div class="form-box">
+
         <input id="studentID" type="text" placeholder="Student ID" required>
         <input id="password" type="password" placeholder="Password" required>
         <input id="confirmPassword" type="password" placeholder="Confirm Password" required>
@@ -26,9 +27,61 @@
 
         <div class="divider">OR</div>
 
+        <!-- LOGIN BUTTON moved above social icons -->
         <button class="btn" id="toLoginBtn">GO TO LOGIN</button>
+
+        <!-- SOCIAL LOGIN BUTTONS -->
+        <div class="social-buttons">
+            <button class="social-btn">
+                <img src="asset/google.webp" alt="Google">
+            </button>
+
+            <button class="social-btn">
+                <img src="asset/facebook.logo.webp" alt="Facebook">
+            </button>
+
+            <button class="social-btn">
+                <img src="asset/tiktok.webp" alt="TikTok">
+            </button>
+        </div>
+
     </div>
 </div>
 
 </body>
 </html>
+<style>
+   /* Smaller social section */
+.social-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    margin-top: 10px;
+}
+
+/* Circle button box */
+.social-btn {
+    width: 40px !important;      /* size of the circle */
+    height: 40px !important;
+    border-radius: 50% !important;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    padding: 0;
+    border: none;
+}
+
+/* Logo inside circle */
+.social-btn img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: contain !important;   /* makes logo fit inside */
+    border-radius: 50% !important;
+    padding: 6px;                      /* spacing inside circle */
+    border: none !important;
+}
+
+
