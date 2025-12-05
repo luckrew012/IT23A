@@ -1,4 +1,4 @@
-zbody {
+body {
     margin: 0;
     font-family: Arial, sans-serif;
     background: #f2f2f2;
@@ -21,6 +21,12 @@ zbody {
     cursor: pointer;
 }
 
+.product-label {
+    margin: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
 .details-container {
     margin: 30px auto;
     width: 90%;
@@ -32,6 +38,7 @@ zbody {
     width: 350px;
     height: auto;
     border: 3px solid #ccc;
+    border-radius: 10px;
 }
 
 .info-box {
@@ -54,7 +61,7 @@ zbody {
     margin-top: 25px;
 }
 
-.buy-btn-big, .reserve-btn {
+.buy-btn, .reserve-btn {
     padding: 15px 40px;
     border: none;
     font-size: 18px;
@@ -62,9 +69,14 @@ zbody {
     border-radius: 8px;
 }
 
-.buy-btn-big {
+.buy-btn {
     background: #0A0E5C;
     color: white;
+}
+.cart-icon {
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
 }
 
 .reserve-btn {

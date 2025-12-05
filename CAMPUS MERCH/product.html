@@ -10,14 +10,13 @@
 <body>
 
 <nav class="navbar">
-    <button class="back-btn" onclick="history.back()">←</button>
+    <button class="back-btn" onclick="window.location.href='merch.html'">←</button>
     <h2>NBSC CAMPUS MERCH</h2>
-    <div class="cart-icon">🛒</div>
+    <div class="cart-icon" style="cursor:pointer;" onclick="window.location.href='reserve.html'">🛒</div>
 </nav>
 
-<div class="product-label">
-    PRODUCT 1
-</div>
+
+<div class="product-label">PRODUCT 1</div>
 
 <div class="details-container">
 
@@ -55,7 +54,7 @@
 
         <h4 id="product-size">SIZE: M</h4>
 
-        <!-- ✅ ADDED QUANTITY INPUT -->
+        <!-- QUANTITY -->
         <label for="qty">QUANTITY:</label>
         <input type="number" id="qty" value="1" min="1" style="width: 70px; padding: 5px;">
         <p id="total-item">Total item: 1pc</p>
@@ -72,25 +71,6 @@
     </div>
 
 </div>
-
-<script>
-    // PRICE PER ITEM (you can change this)
-    let price = 650;
-
-    const qtyInput = document.getElementById("qty");
-    const totalItem = document.getElementById("total-item");
-    const totalAmount = document.getElementById("total-price");
-
-    qtyInput.addEventListener("input", () => {
-        let qty = parseInt(qtyInput.value);
-
-        if (qty < 1) qty = 1; // Prevent 0 or negative
-        qtyInput.value = qty;
-
-        totalItem.textContent = `Total item: ${qty}pc`;
-        totalAmount.textContent = price * qty;
-    });
-</script>
 
 <script src="product.js"></script>
 
