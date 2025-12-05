@@ -51,7 +51,7 @@
 </body>
 </html>
 <style>
-   /* Smaller social section */
+  /* Social buttons container */
 .social-buttons {
     display: flex;
     justify-content: center;
@@ -59,11 +59,11 @@
     margin-top: 10px;
 }
 
-/* Circle button box */
+/* Circle button */
 .social-btn {
-    width: 40px !important;      /* size of the circle */
-    height: 40px !important;
-    border-radius: 50% !important;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
     background: white;
     display: flex;
     align-items: center;
@@ -76,12 +76,10 @@
 
 /* Logo inside circle */
 .social-btn img {
-    width: 100% !important;
-    height: 100% !important;
-    object-fit: contain !important;   /* makes logo fit inside */
-    border-radius: 50% !important;
-    padding: 6px;                      /* spacing inside circle */
-    border: none !important;
+    width: 100%;
+    height: 100%;
+    padding: 6px;              /* spacing inside */
+    object-fit: contain;       /* keeps full logo visible */
+    border-radius: 50%;        /* keeps logo circular */
+    border: none;
 }
-
-
