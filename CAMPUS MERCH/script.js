@@ -1,6 +1,6 @@
 // PRODUCT LIST
 const items = [
-  { img: "img1.png", name: "NBSC UNIFORM MEN", price: "450 PHP" },
+  { img: "nbsclogo.png", name: "NBSC UNIFORM MEN", price: "450 PHP" },
   { img: "img2.png", name: "IBM DEPARTMENT POLO SHIRT", price: "450 PHP" },
   { img: "img3.png", name: "ICS DEPARTMENT T-SHIRT", price: "450 PHP" },
   { img: "img4.png", name: "ITE DEPARTMENT POLO SHIRT", price: "450 PHP" },
