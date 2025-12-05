@@ -74,6 +74,21 @@ body {
     background: #dce3ff;
 }
 
+.mobile-toggle-btn {
+    background: #ffffff;
+    color: #001a7b;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.mobile-toggle-btn:hover {
+    background: #dce3ff;
+}
+
 /* PRODUCT GRID */
 .container {
     margin-top: 120px; /* to avoid navbar overlap */
@@ -122,4 +137,40 @@ button {
 
 button:hover {
     background: #0030d4;
+}
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        padding: 10px 15px;
+    }
+
+    .right {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .right input {
+        width: 60%;
+        margin-bottom: 5px;
+    }
+
+    .right button {
+        width: 35%;
+        padding: 8px 10px;
+    }
+
+    .container {
+        padding: 0 15px;
+        grid-template-columns: 1fr; /* one column */
+    }
+
+    .card img {
+        height: 150px;
+    }
+
+    .card button {
+        width: 70%;
+    }
 }
