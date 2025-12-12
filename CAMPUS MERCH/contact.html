@@ -5,6 +5,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>NBSC Campus Merch | Contact Us</title>
 <link rel="stylesheet" href="contact.css">
+
+<!-- FONT AWESOME FOR ICONS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body>
@@ -17,8 +20,12 @@
     </div>
 
     <div class="right">
-        <button class="home-btn" onclick="window.location.href='merch.html'">Home</button>
-        <button class="logout-btn" onclick="window.location.href='loginpage.html'">Logout</button>
+        <button class="contact-btn" onclick="window.location.href='merch.html'">Home</button>
+
+        <!-- LOGOUT ICON BUTTON -->
+        <button class="logout-icon" onclick="window.location.href='loginpage.html'">
+            <i class="fas fa-sign-out-alt"></i>
+        </button>
     </div>
 </nav>
 
@@ -31,7 +38,18 @@
 <!-- CONTACT SECTION -->
 <div class="contact-container">
 
-    <!-- LEFT SIDE: DETAILS -->
+    <!-- SEND MESSAGE FIRST -->
+    <form class="contact-form">
+        <h2>Send Us a Message</h2>
+
+        <input type="text" id="name" placeholder="Full Name" required>
+        <input type="email" id="email" placeholder="Email Address" required>
+        <textarea id="message" rows="5" placeholder="Your Message..." required></textarea>
+
+        <button type="submit" class="send-btn">Send Message</button>
+    </form>
+
+    <!-- GET IN TOUCH UNDER SEND MESSAGE -->
     <div class="contact-info">
         <h2>Get in Touch</h2>
 
@@ -42,7 +60,7 @@
 
         <div class="info-box">
             <h3>📍 Address</h3>
-            <p>Northern Bukidnon State Colleg<br>Tankulan, Manolo Fortich, Bukidnon</p>
+            <p>Northern Bukidnon State College<br>Tankulan, Manolo Fortich, Bukidnon</p>
         </div>
 
         <div class="info-box">
@@ -61,16 +79,6 @@
         </div>
     </div>
 
-    <!-- RIGHT SIDE: FORM -->
-    <form class="contact-form">
-        <h2>Send Us a Message</h2>
-
-        <input type="text" id="name" placeholder="Full Name" required>
-        <input type="email" id="email" placeholder="Email Address" required>
-        <textarea id="message" rows="5" placeholder="Your Message..." required></textarea>
-
-        <button type="submit" class="send-btn">Send Message</button>
-    </form>
 </div>
 
 <!-- MAP SECTION -->

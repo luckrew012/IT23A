@@ -17,7 +17,6 @@ body {
     position: fixed;
     top: 0;
     z-index: 1000;
-   
 }
 
 .logo {
@@ -30,19 +29,51 @@ body {
     align-items: center;
 }
 
-.right button {
+/* UPDATED RIGHT SIDE */
+.right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    /* PUSH TO FAR RIGHT */
+    margin-left: auto;
+    margin-right: px;
+}
+
+/* CONTACT BUTTON */
+.right .contact-btn {
     background: #ffffff;
     color: #001a7b;
     padding: 10px 18px;
     border-radius: 20px;
     border: none;
-    margin-left: 10px;
     cursor: pointer;
     transition: 0.3s;
     font-weight: bold;
 }
 
-.right button:hover {
+.right .contact-btn:hover {
+    background: #dce3ff;
+}
+
+/* LOGOUT ICON BUTTON */
+.logout-icon {
+    background: white;
+    color: #001a7b;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-right: 50px;
+}
+
+.logout-icon:hover {
     background: #dce3ff;
 }
 
@@ -51,7 +82,6 @@ body {
     margin-top: 120px;
     text-align: center;
     padding: 20px;
-    
 }
 
 .header h1 {
@@ -68,7 +98,6 @@ body {
     margin: 30px auto;
     width: 90%;
     display: grid;
-    grid-template-columns: 1fr 1fr;
     gap: 40px;
 }
 
@@ -156,5 +185,9 @@ body {
 @media (max-width: 900px) {
     .contact-container {
         grid-template-columns: 1fr;
+    }
+
+    .right {
+        gap: 10px;
     }
 }
